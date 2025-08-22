@@ -1,0 +1,556 @@
+﻿<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manan Pahuja</title>
+    <meta name="description" content="Hello! My name is Manan Pahuja — personal landing page." /><!-- Social previews -->
+<meta property="og:title" content="Manan Pahuja" />
+<meta property="og:description" content="Hello! My name is Manan Pahuja" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.MananPahuja.com" />
+<meta property="og:image" content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'><rect width='100%25' height='100%25' fill='white'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,Segoe UI,Roboto,Arial,sans-serif' font-size='64' fill='black'>Manan Pahuja</text></svg>" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Favicon (simple inline SVG) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='white'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, Helvetica, sans-serif' font-size='34' fill='black'%3EMP%3C/text%3E%3C/svg%3E" />
+
+<style>
+  :root {
+    --bg: #ffffff;    /* white background */
+    --fg: #000000;    /* black text */
+    --muted: rgba(0, 0, 0, 0.6);
+    --ring: rgba(0, 0, 0, 0.08);
+  }
+  html, body {
+    height: 100%;
+  }
+  /* Use a crisp, accessible system font stack to avoid external requests */
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .wrap {
+    min-height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 4rem 1.25rem;
+  }
+  .card {
+    width: min(720px, 92vw);
+    background: #fff;
+    border: 1px solid var(--ring);
+    border-radius: 24px;
+    padding: clamp(1.75rem, 4vw, 3rem);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .card:focus-within, .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+  }
+  h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 .5rem 0;
+  }
+  p.tagline {
+    margin: 0 0 1.75rem 0;
+    color: var(--muted);
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  .link {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: inherit; /* stay black */
+    font-weight: 600;
+    border-bottom: 2px solid rgba(0,0,0,0.15);
+    padding-bottom: .15rem;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .link:hover { border-color: rgba(0,0,0,0.35); }
+  .arrow { display: inline-block; transform: translateX(0); transition: transform .2s ease; }
+  .link:hover .arrow { transform: translateX(4px); }
+
+  /* Small footer note */
+  footer {
+    margin-top: 1.5rem;
+    font-size: .9rem;
+    color: var(--muted);
+  }
+
+  /* A11y: focus styles */
+  a:focus { outline: none; }
+  .link:focus-visible { box-shadow: 0 0 0 6px rgba(0,0,0,0.08); border-color: rgba(0,0,0,0.45); border-radius: 6px; }
+
+  /* Respect user motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .card, .arrow, .link { transition: none; }
+  }
+</style>
+
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card" role="group" aria-labelledby="title">
+        <h1 id="title">Hello! My name is Manan Pahuja</h1>
+        <p class="tagline">Welcome to my corner of the internet.</p>
+        <p>
+          <a class="link" href="https://www.MananPahuja.com" rel="noopener noreferrer" aria-label="Visit MananPahuja dot com">
+            https://www.MananPahuja.com
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </p>
+        <footer>
+          <span id="copystatus" aria-live="polite"></span>
+        </footer>
+      </section>
+    </main><script>
+  // Optional: click the URL to copy as well as navigate with modifier keys
+  (function () {
+    const link = document.querySelector('.link');
+    const status = document.getElementById('copystatus');
+    function copyURL(e) {
+      // If user is trying to open in new tab/window, don't intercept.
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button === 1) return;
+      e.preventDefault();
+      const url = link.getAttribute('href');
+      navigator.clipboard.writeText(url).then(() => {
+        status.textContent = 'Link copied to clipboard';
+        setTimeout(() => (status.textContent = ''), 1800);
+      }).catch(() => {
+        window.location.href = url; // fallback: just navigate
+      });
+    }
+    link.addEventListener('click', copyURL, false);
+  })();
+</script>
+
+  </body>
+</html> 
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manan Pahuja</title>
+    <meta name="description" content="Hello! My name is Manan Pahuja — personal landing page." /><!-- Social previews -->
+<meta property="og:title" content="Manan Pahuja" />
+<meta property="og:description" content="Hello! My name is Manan Pahuja" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.MananPahuja.com" />
+<meta property="og:image" content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'><rect width='100%25' height='100%25' fill='white'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,Segoe UI,Roboto,Arial,sans-serif' font-size='64' fill='black'>Manan Pahuja</text></svg>" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Favicon (simple inline SVG) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='white'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, Helvetica, sans-serif' font-size='34' fill='black'%3EMP%3C/text%3E%3C/svg%3E" />
+
+<style>
+  :root {
+    --bg: #ffffff;    /* white background */
+    --fg: #000000;    /* black text */
+    --muted: rgba(0, 0, 0, 0.6);
+    --ring: rgba(0, 0, 0, 0.08);
+  }
+  html, body {
+    height: 100%;
+  }
+  /* Use a crisp, accessible system font stack to avoid external requests */
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .wrap {
+    min-height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 4rem 1.25rem;
+  }
+  .card {
+    width: min(720px, 92vw);
+    background: #fff;
+    border: 1px solid var(--ring);
+    border-radius: 24px;
+    padding: clamp(1.75rem, 4vw, 3rem);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .card:focus-within, .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+  }
+  h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 .5rem 0;
+  }
+  p.tagline {
+    margin: 0 0 1.75rem 0;
+    color: var(--muted);
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  .link {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: inherit; /* stay black */
+    font-weight: 600;
+    border-bottom: 2px solid rgba(0,0,0,0.15);
+    padding-bottom: .15rem;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .link:hover { border-color: rgba(0,0,0,0.35); }
+  .arrow { display: inline-block; transform: translateX(0); transition: transform .2s ease; }
+  .link:hover .arrow { transform: translateX(4px); }
+
+  /* Small footer note */
+  footer {
+    margin-top: 1.5rem;
+    font-size: .9rem;
+    color: var(--muted);
+  }
+
+  /* A11y: focus styles */
+  a:focus { outline: none; }
+  .link:focus-visible { box-shadow: 0 0 0 6px rgba(0,0,0,0.08); border-color: rgba(0,0,0,0.45); border-radius: 6px; }
+
+  /* Respect user motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .card, .arrow, .link { transition: none; }
+  }
+</style>
+
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card" role="group" aria-labelledby="title">
+        <h1 id="title">Hello! My name is Manan Pahuja</h1>
+        <p class="tagline">Welcome to my corner of the internet.</p>
+        <p>
+          <a class="link" href="https://www.MananPahuja.com" rel="noopener noreferrer" aria-label="Visit MananPahuja dot com">
+            https://www.MananPahuja.com
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </p>
+        <footer>
+          <span id="copystatus" aria-live="polite"></span>
+        </footer>
+      </section>
+    </main><script>
+  // Optional: click the URL to copy as well as navigate with modifier keys
+  (function () {
+    const link = document.querySelector('.link');
+    const status = document.getElementById('copystatus');
+    function copyURL(e) {
+      // If user is trying to open in new tab/window, don't intercept.
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button === 1) return;
+      e.preventDefault();
+      const url = link.getAttribute('href');
+      navigator.clipboard.writeText(url).then(() => {
+        status.textContent = 'Link copied to clipboard';
+        setTimeout(() => (status.textContent = ''), 1800);
+      }).catch(() => {
+        window.location.href = url; // fallback: just navigate
+      });
+    }
+    link.addEventListener('click', copyURL, false);
+  })();
+</script>
+
+  </body>
+</html> 
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manan Pahuja</title>
+    <meta name="description" content="Hello! My name is Manan Pahuja — personal landing page." /><!-- Social previews -->
+<meta property="og:title" content="Manan Pahuja" />
+<meta property="og:description" content="Hello! My name is Manan Pahuja" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.MananPahuja.com" />
+<meta property="og:image" content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'><rect width='100%25' height='100%25' fill='white'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,Segoe UI,Roboto,Arial,sans-serif' font-size='64' fill='black'>Manan Pahuja</text></svg>" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Favicon (simple inline SVG) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='white'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, Helvetica, sans-serif' font-size='34' fill='black'%3EMP%3C/text%3E%3C/svg%3E" />
+
+<style>
+  :root {
+    --bg: #ffffff;    /* white background */
+    --fg: #000000;    /* black text */
+    --muted: rgba(0, 0, 0, 0.6);
+    --ring: rgba(0, 0, 0, 0.08);
+  }
+  html, body {
+    height: 100%;
+  }
+  /* Use a crisp, accessible system font stack to avoid external requests */
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .wrap {
+    min-height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 4rem 1.25rem;
+  }
+  .card {
+    width: min(720px, 92vw);
+    background: #fff;
+    border: 1px solid var(--ring);
+    border-radius: 24px;
+    padding: clamp(1.75rem, 4vw, 3rem);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .card:focus-within, .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+  }
+  h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 .5rem 0;
+  }
+  p.tagline {
+    margin: 0 0 1.75rem 0;
+    color: var(--muted);
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  .link {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: inherit; /* stay black */
+    font-weight: 600;
+    border-bottom: 2px solid rgba(0,0,0,0.15);
+    padding-bottom: .15rem;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .link:hover { border-color: rgba(0,0,0,0.35); }
+  .arrow { display: inline-block; transform: translateX(0); transition: transform .2s ease; }
+  .link:hover .arrow { transform: translateX(4px); }
+
+  /* Small footer note */
+  footer {
+    margin-top: 1.5rem;
+    font-size: .9rem;
+    color: var(--muted);
+  }
+
+  /* A11y: focus styles */
+  a:focus { outline: none; }
+  .link:focus-visible { box-shadow: 0 0 0 6px rgba(0,0,0,0.08); border-color: rgba(0,0,0,0.45); border-radius: 6px; }
+
+  /* Respect user motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .card, .arrow, .link { transition: none; }
+  }
+</style>
+
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card" role="group" aria-labelledby="title">
+        <h1 id="title">Hello! My name is Manan Pahuja</h1>
+        <p class="tagline">Welcome to my corner of the internet.</p>
+        <p>
+          <a class="link" href="https://www.MananPahuja.com" rel="noopener noreferrer" aria-label="Visit MananPahuja dot com">
+            https://www.MananPahuja.com
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </p>
+        <footer>
+          <span id="copystatus" aria-live="polite"></span>
+        </footer>
+      </section>
+    </main><script>
+  // Optional: click the URL to copy as well as navigate with modifier keys
+  (function () {
+    const link = document.querySelector('.link');
+    const status = document.getElementById('copystatus');
+    function copyURL(e) {
+      // If user is trying to open in new tab/window, don't intercept.
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button === 1) return;
+      e.preventDefault();
+      const url = link.getAttribute('href');
+      navigator.clipboard.writeText(url).then(() => {
+        status.textContent = 'Link copied to clipboard';
+        setTimeout(() => (status.textContent = ''), 1800);
+      }).catch(() => {
+        window.location.href = url; // fallback: just navigate
+      });
+    }
+    link.addEventListener('click', copyURL, false);
+  })();
+</script>
+
+  </body>
+</html> 
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manan Pahuja</title>
+    <meta name="description" content="Hello! My name is Manan Pahuja — personal landing page." /><!-- Social previews -->
+<meta property="og:title" content="Manan Pahuja" />
+<meta property="og:description" content="Hello! My name is Manan Pahuja" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.MananPahuja.com" />
+<meta property="og:image" content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'><rect width='100%25' height='100%25' fill='white'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,Segoe UI,Roboto,Arial,sans-serif' font-size='64' fill='black'>Manan Pahuja</text></svg>" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Favicon (simple inline SVG) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='white'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, Helvetica, sans-serif' font-size='34' fill='black'%3EMP%3C/text%3E%3C/svg%3E" />
+
+<style>
+  :root {
+    --bg: #ffffff;    /* white background */
+    --fg: #000000;    /* black text */
+    --muted: rgba(0, 0, 0, 0.6);
+    --ring: rgba(0, 0, 0, 0.08);
+  }
+  html, body {
+    height: 100%;
+  }
+  /* Use a crisp, accessible system font stack to avoid external requests */
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .wrap {
+    min-height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 4rem 1.25rem;
+  }
+  .card {
+    width: min(720px, 92vw);
+    background: #fff;
+    border: 1px solid var(--ring);
+    border-radius: 24px;
+    padding: clamp(1.75rem, 4vw, 3rem);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .card:focus-within, .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+  }
+  h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 .5rem 0;
+  }
+  p.tagline {
+    margin: 0 0 1.75rem 0;
+    color: var(--muted);
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  .link {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: inherit; /* stay black */
+    font-weight: 600;
+    border-bottom: 2px solid rgba(0,0,0,0.15);
+    padding-bottom: .15rem;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .link:hover { border-color: rgba(0,0,0,0.35); }
+  .arrow { display: inline-block; transform: translateX(0); transition: transform .2s ease; }
+  .link:hover .arrow { transform: translateX(4px); }
+
+  /* Small footer note */
+  footer {
+    margin-top: 1.5rem;
+    font-size: .9rem;
+    color: var(--muted);
+  }
+
+  /* A11y: focus styles */
+  a:focus { outline: none; }
+  .link:focus-visible { box-shadow: 0 0 0 6px rgba(0,0,0,0.08); border-color: rgba(0,0,0,0.45); border-radius: 6px; }
+
+  /* Respect user motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .card, .arrow, .link { transition: none; }
+  }
+</style>
+
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card" role="group" aria-labelledby="title">
+        <h1 id="title">Hello! My name is Manan Pahuja</h1>
+        <p class="tagline">Welcome to my corner of the internet.</p>
+        <p>
+          <a class="link" href="https://www.MananPahuja.com" rel="noopener noreferrer" aria-label="Visit MananPahuja dot com">
+            https://www.MananPahuja.com
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </p>
+        <footer>
+          <span id="copystatus" aria-live="polite"></span>
+        </footer>
+      </section>
+    </main><script>
+  // Optional: click the URL to copy as well as navigate with modifier keys
+  (function () {
+    const link = document.querySelector('.link');
+    const status = document.getElementById('copystatus');
+    function copyURL(e) {
+      // If user is trying to open in new tab/window, don't intercept.
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button === 1) return;
+      e.preventDefault();
+      const url = link.getAttribute('href');
+      navigator.clipboard.writeText(url).then(() => {
+        status.textContent = 'Link copied to clipboard';
+        setTimeout(() => (status.textContent = ''), 1800);
+      }).catch(() => {
+        window.location.href = url; // fallback: just navigate
+      });
+    }
+    link.addEventListener('click', copyURL, false);
+  })();
+</script>
+
+  </body>
+</html> 
