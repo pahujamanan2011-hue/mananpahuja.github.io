@@ -1,107 +1,346 @@
-<!-- HERO -->
-<section class="hero-section" id="hero">
-    <div class="container">
-        <h1>Manan Pahuja</h1>
-        <p>Welcome to my personal landing page</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <p>
-            This page is my central hub for projects,
-            websites, and social profiles.
+  <!-- ============================================================
+       SEO & OPEN GRAPH — Edit these to match your details
+       ============================================================ -->
+  <title>Manan Pahu — Personal Hub</title>
+  <meta name="description" content="Developer, builder, learner, and creator. The personal digital hub of Manan Pahu." />
+  <meta name="author" content="Manan Pahu" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph (social sharing previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Manan Pahu — Personal Hub" />
+  <meta property="og:description" content="Developer, builder, learner, and creator. The personal digital hub of Manan Pahu." />
+  <meta property="og:url" content="https://yourwebsite.com" /> <!-- REPLACE with your URL -->
+  <meta property="og:image" content="https://yourwebsite.com/og-image.jpg" /> <!-- REPLACE with your OG image -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Manan Pahu — Personal Hub" />
+  <meta name="twitter:description" content="Developer, builder, learner, and creator." />
+
+  <!-- Favicon placeholder — replace /favicon.ico with your own -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts — Cormorant Garamond (display) + DM Mono (body/code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header class="nav-header" id="nav-header" role="banner">
+    <nav class="nav-container" aria-label="Primary navigation">
+
+      <!-- ★ EDIT: Your name/logo in the nav -->
+      <a href="#hero" class="nav-logo" aria-label="Manan Pahu — home">MP</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="#hero"    class="nav-link" data-section="hero">Home</a></li>
+        <li><a href="#connect" class="nav-link" data-section="connect">Connect</a></li>
+        <li><a href="#websites" class="nav-link" data-section="websites">Work</a></li>
+        <li><a href="#about"   class="nav-link" data-section="about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+         ★ EDIT: Name, tagline, and description below
+         ============================================================ -->
+    <section class="hero" id="hero" aria-labelledby="hero-name">
+      <div class="hero__inner">
+
+        <p class="hero__eyebrow" aria-hidden="true">// personal hub</p>
+
+        <!-- ★ EDIT YOUR NAME HERE -->
+        <h1 class="hero__name" id="hero-name">Manan<br /><em>Pahu</em></h1>
+
+        <!-- ★ EDIT YOUR WELCOME TEXT HERE -->
+        <p class="hero__welcome">Welcome to my personal landing page</p>
+
+        <!-- ★ EDIT YOUR DESCRIPTION HERE -->
+        <p class="hero__description">
+          Developer, builder, learner, and creator. This page serves as my
+          central hub for projects, websites, and social profiles.
         </p>
-    </div>
-</section>
 
-<!-- CONNECT -->
-<section id="connect">
-    <div class="container">
-        <h2>Connect With Me</h2>
+        <div class="hero__cta">
+          <a href="#connect" class="btn btn--primary">Get in touch</a>
+          <a href="#websites" class="btn btn--ghost">See my work</a>
+        </div>
+      </div>
 
-        <div class="social-links-grid">
+      <div class="hero__deco" aria-hidden="true">
+        <div class="hero__deco-ring hero__deco-ring--1"></div>
+        <div class="hero__deco-ring hero__deco-ring--2"></div>
+        <div class="hero__deco-ring hero__deco-ring--3"></div>
+      </div>
+    </section>
 
-            <a href="https://github.com/pahujama an2011-hue"
-               class="social-card"
-               target="_blank">
-                GitHub →
-            </a>
+    <!-- ============================================================
+         CONNECT SECTION — Social / Profile Links
+         ★ TO ADD A NEW PLATFORM: duplicate one <a class="social-card"> block,
+           change the href, the icon path/SVG, the label, and the username.
+           No other changes needed.
+         ============================================================ -->
+    <section class="section connect" id="connect" aria-labelledby="connect-title">
+      <div class="section__inner">
 
-            <a href="https://instagram.com/manan_pahuha_"
-               class="social-card"
-               target="_blank">
-                Instagram →
-            </a>
-            <!-- Gmail 1 -->
-<a href="mailto:yourfirstemail@gmail.com"
-   class="social-card"
-   aria-label="Send email to Gmail 1">
-    <span class="social-name">Primary Gmail</span>
-    <span class="social-arrow">→</span>
-</a>
+        <div class="section__header">
+          <span class="section__label">02 — links</span>
+          <h2 class="section__title" id="connect-title">Connect With Me</h2>
+          <p class="section__subtitle">Find me across the web — let's build something together.</p>
+        </div>
 
-<!-- Gmail 2 -->
-<a href="mailto : pahujamanan2011@gmail.com"
-   class="social-card"
-   aria-label="Send email to Gmail 2">
-    <span class="social-name">Secondary Gmail</span>
-    <span class="social-arrow">→</span>
-</a>
+        <div class="social-grid" role="list">
+
+          <!-- ★ EDIT: Replace href with your GitHub URL -->
+          <a href="https://github.com/yourusername" class="social-card" role="listitem" target="_blank" rel="noopener noreferrer" aria-label="GitHub — yourusername">
+            <div class="social-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </div>
+            <div class="social-card__body">
+              <span class="social-card__platform">GitHub</span>
+              <!-- ★ EDIT: Replace with your username -->
+              <span class="social-card__handle">@yourusername</span>
+            </div>
+            <div class="social-card__arrow" aria-hidden="true">↗</div>
+          </a>
+
+          <!-- ★ EDIT: Replace href with your Instagram URL -->
+          <a href="https://instagram.com/yourusername" class="social-card" role="listitem" target="_blank" rel="noopener noreferrer" aria-label="Instagram — yourusername">
+            <div class="social-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </div>
+            <div class="social-card__body">
+              <span class="social-card__platform">Instagram</span>
+              <!-- ★ EDIT: Replace with your username -->
+              <span class="social-card__handle">@yourusername</span>
+            </div>
+            <div class="social-card__arrow" aria-hidden="true">↗</div>
+          </a>
+
+          <!-- ============================================================
+               ★ TO ADD MORE PLATFORMS: Copy the block below and fill it in.
+               Example templates are provided as comments.
+               ============================================================
+
+          <a href="https://linkedin.com/in/yourusername" class="social-card" role="listitem" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn — yourusername">
+            <div class="social-card__icon" aria-hidden="true">
+              [paste your LinkedIn SVG icon here]
+            </div>
+            <div class="social-card__body">
+              <span class="social-card__platform">LinkedIn</span>
+              <span class="social-card__handle">@yourusername</span>
+            </div>
+            <div class="social-card__arrow" aria-hidden="true">↗</div>
+          </a>
+
+          <a href="mailto:you@email.com" class="social-card" role="listitem" aria-label="Email — you@email.com">
+            <div class="social-card__icon" aria-hidden="true">
+              [paste your email SVG icon here]
+            </div>
+            <div class="social-card__body">
+              <span class="social-card__platform">Email</span>
+              <span class="social-card__handle">you@email.com</span>
+            </div>
+            <div class="social-card__arrow" aria-hidden="true">↗</div>
+          </a>
+
+          ============================================================ -->
 
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- WEBSITES -->
-<section id="websites">
-    <div class="container">
-        <h2>My Websites</h2>
+    <!-- ============================================================
+         WEBSITES SHOWCASE SECTION
+         ★ TO ADD A NEW WEBSITE: duplicate one <article class="site-card"> block,
+           update the number, title, description, and href.
+           The grid handles layout automatically — no CSS changes needed.
+         ============================================================ -->
+    <section class="section websites" id="websites" aria-labelledby="websites-title">
+      <div class="section__inner">
 
-        <div class="websites-grid">
+        <div class="section__header">
+          <span class="section__label">03 — work</span>
+          <h2 class="section__title" id="websites-title">My Websites</h2>
+          <p class="section__subtitle">Projects, experiments, and things I've shipped.</p>
+        </div>
 
-            <!-- WEBSITE 1 -->
-            <article class="website-card">
-                <h3>Tournament Handling</h3>
+        <div class="sites-grid">
 
-                <p>
-                    Tournament management platform for
-                    organizing competitions, players,
-                    brackets and results.
-                </p>
+          <!-- ★ WEBSITE CARD 1 — Edit title, description, and href -->
+          <article class="site-card" aria-label="Website: Website Name">
+            <div class="site-card__number" aria-hidden="true">01</div>
+            <div class="site-card__content">
+              <!-- ★ EDIT: Website name -->
+              <h3 class="site-card__title">Website Name</h3>
+              <!-- ★ EDIT: Short description -->
+              <p class="site-card__description">
+                A short description of what this website does or what it's about. Keep it to 1–2 sentences.
+              </p>
+              <div class="site-card__tags" aria-label="Tags">
+                <!-- ★ EDIT: Optional — add tech/category tags -->
+                <span class="tag">Design</span>
+                <span class="tag">Web</span>
+              </div>
+            </div>
+            <div class="site-card__footer">
+              <!-- ★ EDIT: Replace href with your website URL -->
+              <a href="https://yourwebsite1.com" class="btn btn--sm" target="_blank" rel="noopener noreferrer">
+                Visit Website <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
 
-                <a href="https://YOUR-TOURNAMENT-LINK.vercel.app"
-                   class="website-link"
-                   target="_blank">
-                    Visit Website →
-                </a>
-            </article>
+          <!-- ★ WEBSITE CARD 2 — Edit title, description, and href -->
+          <article class="site-card" aria-label="Website: Website Name">
+            <div class="site-card__number" aria-hidden="true">02</div>
+            <div class="site-card__content">
+              <!-- ★ EDIT: Website name -->
+              <h3 class="site-card__title">Website Name</h3>
+              <!-- ★ EDIT: Short description -->
+              <p class="site-card__description">
+                A short description of what this website does or what it's about. Keep it to 1–2 sentences.
+              </p>
+              <div class="site-card__tags" aria-label="Tags">
+                <!-- ★ EDIT: Optional — add tech/category tags -->
+                <span class="tag">App</span>
+                <span class="tag">Tool</span>
+              </div>
+            </div>
+            <div class="site-card__footer">
+              <!-- ★ EDIT: Replace href with your website URL -->
+              <a href="https://yourwebsite2.com" class="btn btn--sm" target="_blank" rel="noopener noreferrer">
+                Visit Website <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
 
-            <!-- WEBSITE 2 -->
-            <article class="website-card">
-                <h3>My Second Project</h3>
-
-                <p>
-                    Description of your second website.
-                </p>
-
-                <a href="https://YOUR-SECOND-WEBSITE.vercel.app"
-                   class="website-link"
-                   target="_blank">
-                    Visit Website →
-                </a>
-            </article>
+          <!-- ============================================================
+               ★ ADD MORE WEBSITES: Copy the block above, increment the number
+                 (03, 04, 05...), and update title/description/href.
+               ============================================================ -->
 
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- ABOUT -->
-<section id="about">
-    <div class="container">
-        <h2>About Me</h2>
+    <!-- ============================================================
+         ABOUT SECTION
+         ★ EDIT: Replace all placeholder text with your own story
+         ============================================================ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="section__inner about__inner">
 
-        <p>
-            I'm Manan Pappja. I enjoy building websites,
-            projects, and digital tools. This page serves
-            as my online hub where visitors can find my
-            work and connect with me.
+        <div class="section__header">
+          <span class="section__label">04 — me</span>
+          <h2 class="section__title" id="about-title">About Me</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <!-- ★ EDIT: Your bio paragraph 1 -->
+            <p>
+              Hi, I'm Manan — a developer and creator passionate about building things that matter. I love the intersection of clean code and thoughtful design.
+            </p>
+            <!-- ★ EDIT: Your bio paragraph 2 -->
+            <p>
+              When I'm not writing code, you'll find me exploring new ideas, tinkering with side projects, or diving into whatever rabbit hole caught my attention this week.
+            </p>
+            <!-- ★ EDIT: Your bio paragraph 3 — or delete this block -->
+            <p>
+              This page is my corner of the internet. Feel free to explore my work, connect with me, or just say hello.
+            </p>
+          </div>
+
+          <div class="about__details">
+            <!-- ★ EDIT: Update these details to match your own -->
+            <dl class="details-list">
+              <div class="details-list__item">
+                <dt>Based in</dt>
+                <!-- ★ EDIT -->
+                <dd>Your City, Country</dd>
+              </div>
+              <div class="details-list__item">
+                <dt>Focus</dt>
+                <!-- ★ EDIT -->
+                <dd>Web Development</dd>
+              </div>
+              <div class="details-list__item">
+                <dt>Available for</dt>
+                <!-- ★ EDIT -->
+                <dd>Freelance &amp; Collabs</dd>
+              </div>
+              <div class="details-list__item">
+                <dt>Status</dt>
+                <!-- ★ EDIT: change "open" class to "closed" if not available -->
+                <dd><span class="status-dot status-dot--open" aria-label="Currently available"></span> Open to work</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ★ EDIT: Name is auto-pulled from the nav logo; year is auto-generated
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <!-- ★ EDIT: Your name -->
+        <span class="footer__name">Manan Pahu</span>
+      </div>
+      <div class="footer__center">
+        <!-- Year is injected by script.js automatically -->
+        <p class="footer__copy">
+          &copy; <span id="footer-year"></span> Manan Pahu. All rights reserved.
         </p>
+      </div>
+      <div class="footer__right">
+        <a href="#hero" class="footer__back" aria-label="Back to top">Back to top ↑</a>
+      </div>
     </div>
-</section>
+  </footer>
+
+  <!-- ============================================================
+       SCROLL TO TOP BUTTON
+       ============================================================ -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll back to top" hidden>
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
